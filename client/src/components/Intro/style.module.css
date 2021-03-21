@@ -1,0 +1,65 @@
+.Top {
+  text-align: center;
+  position: relative;
+}
+.Image {
+  background-image: url("../../Img/Corona.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 75vh;
+  background-position: center bottom;
+  filter: brightness(50%);
+}
+.Header {
+  text-align: left;
+  position: absolute;
+  font-family: "Merriweather", serif;
+  color: snow;
+  bottom: 18rem;
+  font-size: 5rem;
+  letter-spacing: 3px;
+  word-spacing: 4px;
+  left: 5rem;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .Image {
+    background-image: url("../../Img/small.jpg");
+    background-position: top center;
+    background-attachment: scroll;
+  }
+  .Header {
+    color: snow;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    top: 17rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+  .Header {
+    color: snow;
+    font-size: 3.5rem;
+    margin-top: 5rem;
+    letter-spacing: 3px;
+    top: 19rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .Header {
+    color: snow;
+    font-size: 3.5rem;
+    margin-top: 5rem;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+  }
+}
