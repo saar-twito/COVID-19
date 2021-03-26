@@ -1,5 +1,5 @@
 import React from 'react'
-import MainInfo from './components//Main/MainInfo'
+import Main from './components//Main/Main'
 import { CoronaProvider } from './components/UseContext/Corona'
 
 // * Style
@@ -12,7 +12,7 @@ const App = () => (
   <CoronaProvider>
     <div className="App">
       <ToastContainer />
-      <MainInfo />
+      <Main />
     </div>
   </CoronaProvider>
 )

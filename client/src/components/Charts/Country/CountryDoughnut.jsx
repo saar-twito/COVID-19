@@ -4,13 +4,13 @@ import { Doughnut } from "react-chartjs-2";
 const CountryDoughnut = ({ countryNews, countryName }) => {
   if (countryNews.length === 0) return null;
 
-  let keys;
-  let values;
-  ({ keys, values, countryName } = modifyDataToShow(countryNews, countryName));
+  const keys = Object.keys(countryNews[0]).slice(2, 6);
+  const values = Object.values(countryNews[0]).slice(2, 6);
+  countryName = countryName.charAt(0).toUpperCase() + countryName.slice(1);
 
   return (
     <React.Fragment>
-      <h2>Total in {countryName}</h2>
+      <h1>Total in {countryName}</h1>
       <Doughnut
         data={{
           labels: keys,
@@ -26,8 +26,8 @@ const CountryDoughnut = ({ countryNews, countryName }) => {
             },
           ],
         }}
-        height={150}
-        width={150}
+        height={100}
+        width={100}
         options={{
           maintainAspectRatio: false,
           legend: {
@@ -42,9 +42,3 @@ const CountryDoughnut = ({ countryNews, countryName }) => {
 };
 
 export default CountryDoughnut;
-function modifyDataToShow(countryNews, countryName) {
-  const keys = Object.keys(countryNews[0]).slice(2, 6);
-  const values = Object.values(countryNews[0]).slice(2, 6);
-  countryName = countryName.charAt(0).toUpperCase() + countryName.slice(1);
-  return { keys, values, countryName };
-}

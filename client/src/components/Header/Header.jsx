@@ -3,14 +3,14 @@ import React from "react";
 // * Style
 import classes from "./style.module.css";
 
-const Intro = () => (
-  <React.Fragment>
+const Header = () => (
+  <header>
     <div className={classes.Image}></div>
     <h1 className={classes.Header}>
       Covid-19
       <br /> Information and statistics
     </h1>
-  </React.Fragment>
+  </header>
 );
 
-export default Intro;
+export default Header;

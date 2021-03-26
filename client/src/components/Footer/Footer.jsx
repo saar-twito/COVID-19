@@ -3,7 +3,7 @@ import React from "react";
 // * Style
 import classes from "./style.module.css";
 const Footer = () => (
-  <div className={classes.Container}>
+  <footer className={classes.Container}>
     <h1>Want to learn more?</h1>
     <a
       target="_blank"
@@ -11,7 +11,7 @@ const Footer = () => (
     >
       Coronavirus - WHO | World Health Organization
     </a>
-  </div>
+  </footer>
 );
 
 export default Footer;

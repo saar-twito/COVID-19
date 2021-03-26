@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from "react";
 import axios from "axios";
 import { CoronaContext } from "../UseContext/Corona";
 
-import Intro from "../Intro/Intro";
+import Header from "../Header/Header";
 import Global from "../Charts/Global/Global";
 import Country from "../Charts/Country/Country";
 import Footer from "../Footer/Footer";
@@ -59,8 +59,8 @@ const MainInfo = () => {
   };
 
   return (
-    <React.Fragment>
-      <Intro />
+    <main>
+      <Header />
       <div className="container">
         <Global info={state.globalNews} />
         <Country
@@ -82,7 +82,7 @@ const MainInfo = () => {
         />
       </div>
       <Footer />
-    </React.Fragment>
+    </main>
   );
 };
 

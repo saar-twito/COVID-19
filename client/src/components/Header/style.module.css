@@ -29,6 +29,7 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
   .Image {
     background-image: url("../../Img/small.jpg");
     background-position: top center;
@@ -46,9 +47,9 @@
 @media only screen and (min-width: 601px) {
   .Header {
     color: snow;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     letter-spacing: 3px;
-    top: 17rem;
+    top: 29rem;
   }
 }
 
@@ -57,7 +58,7 @@
   .Header {
     color: snow;
     font-size: 3.5rem;
-    margin-top: 3rem;
+    margin-top: 13rem;
     letter-spacing: 3px;
     word-spacing: 4px;
   }

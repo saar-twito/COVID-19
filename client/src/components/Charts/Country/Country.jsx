@@ -20,7 +20,7 @@ const Country = ({
     fontSize: "1.1rem",
   };
   return (
-    <div className="row mt-5">
+    <article className="row mt-5">
       <Layout>
         <h1 className={classes.Header}>Covid-19 in a specific country</h1>
         <p className={classes.Description}>
@@ -53,7 +53,7 @@ const Country = ({
           countryName={showCountryNameFromButton}
         />
       </Layout>
-    </div>
+    </article>
   );
 };
 

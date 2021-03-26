@@ -6,7 +6,7 @@ import Layout from "../../Layout/Layout";
 import classes from "./style.module.css";
 
 const Global = ({ info }) => (
-  <div className="row mt-5">
+  <article className="row mt-5">
     <Layout>
       <h1 className={classes.Header}>Covid-19 around the world</h1>
       <p className={classes.Description}>
@@ -23,7 +23,7 @@ const Global = ({ info }) => (
     <Layout>
       <GlobeDoughnut info={info} />
     </Layout>
-  </div>
+  </article>
 );
 
 export default Global;
