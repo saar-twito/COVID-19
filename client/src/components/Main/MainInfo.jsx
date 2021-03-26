@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from "react";
 import axios from "axios";
-import { CoronaContext } from "../CoronaContext";
+import { CoronaContext } from "../UseContext/Corona";
 
 import Intro from "../Intro/Intro";
 import Global from "../Charts/Global/Global";

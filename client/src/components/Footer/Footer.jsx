@@ -4,7 +4,7 @@ import React from "react";
 import classes from "./style.module.css";
 const Footer = () => (
   <div className={classes.Container}>
-    <h1 style={{ color: "white" }}>Want to learn more?</h1>
+    <h1>Want to learn more?</h1>
     <a
       target="_blank"
       href="https://www.who.int/health-topics/coronavirus#tab=tab_1"

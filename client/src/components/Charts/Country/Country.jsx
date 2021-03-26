@@ -1,5 +1,9 @@
 import React from "react";
 import CountryDoughnut from "./CountryDoughnut";
+import Layout from "../../Layout/Layout";
+
+// * Style
+import classes from "./style.module.css";
 
 const Country = ({
   countryName,
@@ -17,26 +21,23 @@ const Country = ({
   };
   return (
     <div className="row mt-5">
-      <div
-        className="col-sm-12 col-md-6 col-lg-6 mt-5"
-        style={{ textAlign: "justify" }}
-      >
-        <h1 style={{ color: "grey" }}>Covid-19 in a specific country</h1>
-        <p>
+      <Layout>
+        <h1 className={classes.Header}>Covid-19 in a specific country</h1>
+        <p className={classes.Description}>
           Some countries have managed to deal in different ways in relation to
           each other, some better and some less well.
           <br />
           <strong>In the diagram to your right</strong>, you can see different
           data about countries of your choice.
         </p>
-      </div>
+      </Layout>
 
-      <div className="col-sm-12 col-md-6 col-lg-6 mt-5">
+      <Layout>
         <input
           type="text"
           value={countryName}
           placeholder="Search by a country name"
-          style={{ width: "15rem" }}
+          style={{ width: "15rem", textAlign: "center" }}
           onChange={getUserInput}
         ></input>
         <button
@@ -51,7 +52,7 @@ const Country = ({
           countryNews={countryNews}
           countryName={showCountryNameFromButton}
         />
-      </div>
+      </Layout>
     </div>
   );
 };
