@@ -24,12 +24,8 @@
   opacity: 1;
 }
 
-
-
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
   .Image {
     background-image: url("../../Img/small.jpg");
     background-position: top center;
@@ -58,7 +54,7 @@
   .Header {
     color: snow;
     font-size: 3.5rem;
-    margin-top: 13rem;
+    margin-top: 3rem;
     letter-spacing: 3px;
     word-spacing: 4px;
   }
